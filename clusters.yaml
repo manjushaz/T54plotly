@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: chestnut27-hasura
+  data: null
+  kubeContext: chestnut27
+  name: chestnut27
