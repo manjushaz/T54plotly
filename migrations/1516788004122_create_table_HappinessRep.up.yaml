@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "HappinessRep"("country" text NOT NULL, "happiness_rank" integer
+      NOT NULL, "happiness_score" numeric NOT NULL, "whisker_high" numeric NOT NULL,
+      "whisker_low" numeric NOT NULL, "eco_gdp_per_cap" numeric NOT NULL, "family"
+      numeric NOT NULL, "health_life_expec" numeric NOT NULL, "freedom" numeric NOT
+      NULL, "generosity" numeric NOT NULL, "trust_govt_corrupt" numeric NOT NULL,
+      "dystopia_residual" numeric NOT NULL, PRIMARY KEY ("happiness_rank") )
+  type: run_sql
+- args:
+    name: HappinessRep
+  type: add_existing_table_or_view

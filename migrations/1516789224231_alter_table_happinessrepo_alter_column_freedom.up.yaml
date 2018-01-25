@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "happinessrepo" ALTER COLUMN "freedom" TYPE text;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "happinessrepo" ALTER COLUMN "freedom" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "happinessrepo" ALTER COLUMN "freedom" SET NOT NULL;
+  type: run_sql

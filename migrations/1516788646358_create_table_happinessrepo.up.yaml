@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "happinessrepo"("country" text NOT NULL, "happy_rank" integer
+      NOT NULL, "happy_score" numeric NOT NULL, "whisker_high" numeric NOT NULL, "whisker_low"
+      numeric NOT NULL, "eco_gdp_percap" numeric NOT NULL, "family" numeric NOT NULL,
+      "health_life_expec" numeric NOT NULL, "freedom" numeric NOT NULL, "generosity"
+      numeric NOT NULL, "trust_govt_corrup" numeric NOT NULL, "dystopia_residual"
+      numeric NOT NULL, PRIMARY KEY ("happy_rank") )
+  type: run_sql
+- args:
+    name: happinessrepo
+  type: add_existing_table_or_view
