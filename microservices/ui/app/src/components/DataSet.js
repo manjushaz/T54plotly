@@ -66,7 +66,7 @@ export default class DataSet extends Component {
     this.setState({ isLoading: true });
     requestOptions.body = JSON.stringify(body);
 
-    fetch(API, requestOptions)
+    fetch(API)
     .then(response => {
       if (response.ok) {
         console.log(response);
