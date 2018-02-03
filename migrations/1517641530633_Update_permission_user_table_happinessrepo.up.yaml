@@ -1,0 +1,23 @@
+- args:
+    role: user
+    table: happinessrepo
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - country
+      - dystopia_residual
+      - eco_gdp_percap
+      - family
+      - freedom
+      - generosity
+      - happy_rank
+      - happy_score
+      - health_life_expec
+      - trust_govt_corrup
+      - whisker_high
+      - whisker_low
+      filter: {}
+    role: user
+    table: happinessrepo
+  type: create_select_permission

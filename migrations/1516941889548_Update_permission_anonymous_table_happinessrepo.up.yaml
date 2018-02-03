@@ -1,0 +1,11 @@
+- args:
+    role: anonymous
+    table: happinessrepo
+  type: drop_select_permission
+- args:
+    permission:
+      columns: []
+      filter: {}
+    role: anonymous
+    table: happinessrepo
+  type: create_select_permission
