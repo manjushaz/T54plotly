@@ -23,21 +23,27 @@ const styles = {
 
 const API = 'http://127.0.0.1:5000/happiness';
 
+//const API = 'https://data.chestnut27.hasura-app.io/v1/query';
+//const requestOptions = {
+//    "method": "POST",
+//    "headers": {
+//        "Content-Type": "application/json",
+//    }
+//};
+
 const requestOptions = {
-    "headers": {
-        "crossDomain": "true",
-    }
+    "method": "GET",
 };
 
-const body = {
-    "type": "select",
-    "args": {
-        "table": "happinessrepo",
-        "columns": [
-            "*"
-        ]
-    }
-};
+//const body = {
+//    "type": "select",
+//      "args": {
+//          "table": "happinessrepo",
+//          "columns": [
+//            "*"
+//          ]
+//    }
+//};
 
 export default class DataSet extends Component {
   constructor(props) {
@@ -64,14 +70,15 @@ export default class DataSet extends Component {
 
   componentDidMount() {
     this.setState({ isLoading: true });
-    requestOptions.body = JSON.stringify(body);
+//    requestOptions.body = JSON.stringify(body);
 
-    fetch(API)
+    fetch(API, requestOptions)
     .then(response => {
       if (response.ok) {
         console.log(response);
         return response.json();
       } else {
+        console.log(response);
         throw new Error('Something went wrong ...');
       }
     })
