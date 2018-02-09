@@ -22,10 +22,6 @@ remotes:
       ui:
         dockerfile: microservices/ui/Dockerfile
         path: microservices/ui
-    '{{ cluster.metadata.namespaces.user }}.api':
-      api:
-        dockerfile: microservices/api/Dockerfile
-        path: microservices/api
 
     '{{ cluster.metadata.namespaces.user }}.app':
       app:
