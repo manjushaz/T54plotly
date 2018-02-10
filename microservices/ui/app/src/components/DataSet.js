@@ -21,7 +21,8 @@ const styles = {
   }
 }
 
-const API = 'http://127.0.0.1:5000/happiness';
+//const API = 'http://127.0.0.1:5000/happiness';
+const API = 'https://app.chestnut27.hasura-app.io/happiness';
 
 //const API = 'https://data.chestnut27.hasura-app.io/v1/query';
 //const requestOptions = {
