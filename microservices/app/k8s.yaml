@@ -28,7 +28,7 @@ items:
           imagePullPolicy: IfNotPresent
           name: app
           ports:
-          - containerPort: 8080
+          - containerPort: 8081
             protocol: TCP
           resources: {}
         securityContext: {}
@@ -47,7 +47,7 @@ items:
     ports:
     - port: 80
       protocol: TCP
-      targetPort: 8080
+      targetPort: 8081
     selector:
       app: app
     type: ClusterIP
