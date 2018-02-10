@@ -1,7 +1,7 @@
 from src import app
 # from flask import jsonify
 from flask import Flask, render_template,jsonify, redirect, url_for, request ,make_response,abort
-from flask_cors import CORS
+
 import requests
 import json
 import os
